@@ -18,5 +18,7 @@ function getSumOfDigits(/* n */) {
 }
 
 module.exports = {
-  getSumOfDigits
+  getSumOfDigits(n) {
+    return (n <= 9 ? n : getSumOfDigits(`${n}`.split('').reduce((acc, x) => acc + +x, 0)));
+  }  
 };
