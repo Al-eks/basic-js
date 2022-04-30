@@ -20,7 +20,7 @@ function transform(/* arr */) {
 
 module.exports = {
   transform(arr) {
-    if (!Array.isArray(arr)) throw new Error('Error');
+    if (!Array.isArray(arr)) throw new Error("'arr' parameter must be an instance of the Array!");
     const newArr = [];
     for( let i = 0; i < arr.length; i++) {
       if (arr[i] === '--discard-next') {

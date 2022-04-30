@@ -18,6 +18,21 @@ function getSeason(date) {
   if  (isNaN(date.getTime())) {
     throw new Error('Invalid date!')
   }
+  // if  (isNaN(Date.parse(date))) {
+  //   throw new Error('Invalid date!')
+  // }
+  // if  (Object.prototype.toString.call(date) !== '[object Date]') {
+  //   throw new Error('Invalid date!')
+  // }
+
+  // function getFormattedDate(date = new Date()) {
+  //   try {
+  //     date.toISOString();
+  //   } catch (e) {
+  //     date = new Date();
+  //   }
+  //   return date;
+  // }
 
   let month = date.getMonth();
 
