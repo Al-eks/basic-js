@@ -16,11 +16,11 @@ const chainMaker = {
   removeLink(position) {
     if(typeof position != "number"){
       this.chain = []
-      throw Error()
+      throw Error("You can't remove incorrect link!")
     }
     if(position >= this.chain.length || position <= 0){
       this.chain = []
-      throw Error()
+      throw Error("You can't remove incorrect link!")
     }
     this.chain.splice(position - 1,1)
     return this

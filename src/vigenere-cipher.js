@@ -26,7 +26,7 @@ class VigenereCipheringMachine {
   }
 
   encrypt (string, key) {
-    if (!string || !key) throw new Error('Error')
+    if (!string || !key) throw new Error('Incorrect arguments!')
 
     const arrAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     const arrString = string.toUpperCase().split('');
@@ -47,7 +47,7 @@ class VigenereCipheringMachine {
   }
 
 decrypt (string, key) {
-    if (!string || !key) throw new Error('Error')
+    if (!string || !key) throw new Error('Incorrect arguments!')
 
     const arrAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     const arrString = string.toUpperCase().split('');
